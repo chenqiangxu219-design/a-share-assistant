@@ -6,7 +6,6 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
-	"syscall"
 	"time"
 )
 
@@ -152,17 +151,7 @@ func (s *Store) SetCacheOwnership(uid, gid int) error {
 
 // GetCacheOwnership returns the current file ownership.
 func (s *Store) GetCacheOwnership() (int, int, error) {
-	path := s.dsn
-	info, err := os.Stat(path)
-	if err != nil {
-		return 0, 0, err
-	}
-
-	sysStat, ok := info.Sys().(*syscall.Stat_t)
-	if !ok {
-		return 0, 0, fmt.Errorf("not supported on this platform")
-	}
-	return int(sysStat.Uid), int(sysStat.Gid), nil
+	return getCacheOwnership(s.dsn)
 }
 
 // SetCacheCompression enables or disables compression.
