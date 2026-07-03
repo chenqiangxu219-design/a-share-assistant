@@ -1,0 +1,13 @@
+{
+  "name": "a-share-assistant",
+  "version": "1.0.0",
+  "description": "TradingView-style A-share trading assistant with AI analysis",
+  "private": true,
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "build:backend": "./scripts/build-backend.sh",
+    "build:all": "./scripts/build-all.sh",
+    "package:mac": "cd frontend && npx electron-builder --config electron-builder.config.ts --mac --publish never",
+    "package:win": "cd frontend && npx electron-builder --config electron-builder.config.ts --win --publish never"
+  }
+}
