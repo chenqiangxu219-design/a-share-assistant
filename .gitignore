@@ -12,6 +12,9 @@ frontend/dist/
 frontend/release/
 frontend/electron/dist/
 
+# Release artifacts (too large for git)
+release/
+
 # Python
 __pycache__/
 *.pyc
