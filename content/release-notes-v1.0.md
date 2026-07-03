@@ -33,9 +33,8 @@ TradingView 风格的 A 股实时行情分析与 AI 辅助决策平台。Go + Re
 ## 📥 下载
 | 平台 | 文件 | 大小 |
 |------|------|------|
-| macOS (Apple Silicon) | A股智能助手-1.0.0-arm64.dmg | TBD |
-| macOS (Intel) | A股智能助手-1.0.0-x64.dmg | TBD |
-| Windows | A股智能助手-1.0.0.exe | TBD |
+| macOS (Apple Silicon) | A股智能助手-1.0.0-arm64.dmg | 440 MB |
+| macOS (Intel) | A股智能助手-1.0.0-x64.dmg | 446 MB |
 
 ## 🚀 快速开始
 ```bash
