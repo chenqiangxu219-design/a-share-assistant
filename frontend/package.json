@@ -1,0 +1,38 @@
+{
+  "name": "a-share-assistant",
+  "version": "1.0.0",
+  "private": true,
+  "main": "electron/dist/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "electron:build:ts": "tsc -p tsconfig.electron.json && echo '{\"type\":\"module\"}' > electron/dist/package.json",
+    "electron:dev": "npm run electron:build:ts && VITE_DEV_MODE=true electron electron/dist/main.js",
+    "electron:build:all": "npm run electron:build:ts && VITE_BUILD_TARGET=electron vite build --mode electron",
+    "package": "npm run electron:build:all && electron-builder --config electron-builder.config.ts"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.100.9",
+    "http-proxy": "^1.18.1",
+    "lightweight-charts": "^5.2.0",
+    "lucide-react": "^1.14.0",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "react-router-dom": "^7.15.0",
+    "vite": "^8.0.10",
+    "zustand": "^5.0.13"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "concurrently": "*",
+    "cross-env": "*",
+    "electron": "^33.3.1",
+    "electron-builder": "^26.8.1",
+    "typescript": "^6.0.3",
+    "wait-on": "*"
+  }
+}

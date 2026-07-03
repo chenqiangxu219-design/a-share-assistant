@@ -1,0 +1,6 @@
+Status: 200
+Length: 117829
+First 1000 chars:
+<!DOCTYPE html><html dir="ltr" lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:Web="http://schemas.live.com/Web/"><script type="text/javascript" nonce="whlGoIrBbnf2jA6tJVgCj3tagvK4qVmxbVjaIoPIrgI=" >//<![CDATA[
+si_ST=new Date
+//]]></script><head><!--pc--><title>Resident Evil 4 Remake - Search</title><meta content="text/html; charset=utf-8" http-equiv="content-type" /><meta name="referrer" content="origin-when-cross-origin" /><meta property="og:description" content="Intelligent search from Bing makes it easier to quickly find what you’re looking for and rewards you." /><meta property="og:site_name" content="Bing" /><meta property="og:title" content="Resident Evil 4 Remake - Bing" /><meta property="og:url" content="https://www.bing.com/search?q=Resident+Evil+4+Remake" /><meta property="fb:app_id" content="3732605936979161" /><meta property="og:image" content="http://www.bing.com/sa/simg/facebook_sharing_5.png" /><meta property="og:type" content="website" /><meta prop

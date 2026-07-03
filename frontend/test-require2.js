@@ -1,0 +1,11 @@
+const electron = require('electron');
+console.log('type:', typeof electron);
+console.log('keys:', Object.keys(electron).join(','));
+console.log('ownProps:', Object.getOwnPropertyNames(electron).join(','));
+console.log('app:', typeof electron.app);
+console.log('ipcMain:', typeof electron.ipcMain);
+console.log('BrowserWindow:', typeof electron.BrowserWindow);
+console.log('screen:', typeof electron.screen);
+console.log('protocol:', typeof electron.protocol);
+console.log('session:', typeof electron.session);
+console.log('___:', electron);
