@@ -1,0 +1,53 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Go
+backend/backend
+*.exe
+
+# Node
+node_modules/
+frontend/dist/
+frontend/release/
+frontend/electron/dist/
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Secrets (CRITICAL — do not commit)
+.env
+.env.local
+backend/python_service/*.json
+backend/python_service/*.csv
+
+# Build artifacts
+frontend/electron/asar_*.js
+frontend/electron/test_*.mjs
+frontend/electron/probe*.js
+frontend/electron/vm_*.mjs
+frontend/electron/v33_*.mjs
+frontend/electron/debug.js
+frontend/electron/deep_probe.js
+frontend/electron/direct_binding_test.js
+frontend/electron/esm_test.js
+frontend/electron/extract_bindings.*
+frontend/electron/fix_loader.mjs
+frontend/electron/format_*.js
+frontend/electron/hook_test.js
+frontend/electron/js2c_*.js
+frontend/electron/load_order_test.js
+frontend/electron/loader.*
+frontend/electron/register_test*.mjs
+frontend/electron/resolve_*.mjs
+frontend/electron/resource_test.js
+frontend/electron/protocol_test.mjs
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
