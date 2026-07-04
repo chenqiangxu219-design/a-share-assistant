@@ -133,6 +133,7 @@ Go 后端需要交叉编译（`GOOS=darwin/windows/linux`），CGO_ENABLED=0 确
 
 ## 完整代码
 
-👉 [GitHub: a-share-assistant](https://github.com/your-username/a-share-assistant)
+👉 [GitHub: a-share-assistant](https://github.com/chenqiangxu219-design/a-share-assistant)
+📥 [v1.0.0 下载](https://github.com/chenqiangxu219-design/a-share-assistant/releases/tag/v1.0.0)
 
 **如果你也在用 AI Agent 做开发，欢迎交流。**

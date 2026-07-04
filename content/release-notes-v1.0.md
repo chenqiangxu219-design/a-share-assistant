@@ -53,4 +53,4 @@ cd frontend && npm install && npm run dev   # 前端 :5173
 本工具仅供学习研究使用，不构成投资建议。市场有风险，投资需谨慎。
 
 ---
-**License:** MPL-2.0 | **Star us on GitHub →** [链接]
+**License:** MPL-2.0 | **Star us on GitHub →** [github.com/chenqiangxu219-design/a-share-assistant](https://github.com/chenqiangxu219-design/a-share-assistant)

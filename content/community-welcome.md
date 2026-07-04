@@ -17,9 +17,8 @@ updated: 2026-07-04
 > - 💬 **答疑** — 量化策略、AI 工具使用
 >
 > ## 📥 下载 A股助手 v1.0
-> - GitHub Release: [链接]
-> - macOS (.dmg): [链接]
-> - Windows (.exe): [链接]
+> - GitHub Release: https://github.com/chenqiangxu219-design/a-share-assistant/releases/tag/v1.0.0
+> - macOS (.dmg): 见 Release 页面 (arm64 / x64)
 >
 > ## 🚀 快速开始
 > 1. 下载安装包 → 解压运行
