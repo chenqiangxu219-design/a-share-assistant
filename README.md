@@ -60,6 +60,9 @@
 |------|------|------|
 | macOS (Apple Silicon) | [A股智能助手-1.0.0-arm64.dmg](https://github.com/chenqiangxu219-design/a-share-assistant/releases/download/v1.0.0/A.-1.0.0-arm64.dmg) | 440 MB |
 | macOS (Intel) | [A股智能助手-1.0.0-x64.dmg](https://github.com/chenqiangxu219-design/a-share-assistant/releases/download/v1.0.0/A.-1.0.0-x64.dmg) | 446 MB |
+| Windows (x64) | [A股智能助手-1.0.0.exe](https://github.com/chenqiangxu219-design/a-share-assistant/releases/download/v1.0.0/A.-1.0.0.exe) | 104 MB |
+| Linux (x86_64) | [A股智能助手-1.0.0.AppImage](https://github.com/chenqiangxu219-design/a-share-assistant/releases/download/v1.0.0/A.-1.0.0.AppImage) | 139 MB |
+| Linux (ARM64) | [A股智能助手-1.0.0-arm64.AppImage](https://github.com/chenqiangxu219-design/a-share-assistant/releases/download/v1.0.0/A.-1.0.0-arm64.AppImage) | 139 MB |
 
 ### 🛠 开发模式
 ```bash

@@ -21,6 +21,10 @@ const config: Configuration = {
       },
     ],
     artifactName: '${productName}-${version}-${arch}.${ext}',
+    extraResources: [
+      { from: '../builds/a-share-backend', to: 'backend/a-share-backend' },
+      { from: '../builds/a-share-python-service', to: 'python_service/app' },
+    ],
   },
   win: {
     target: [
@@ -30,21 +34,18 @@ const config: Configuration = {
       },
     ],
     artifactName: '${productName}-${version}.${ext}',
+    extraResources: [
+      { from: '../builds/a-share-backend.exe', to: 'backend/a-share-backend.exe' },
+    ],
   },
   linux: {
     target: ['AppImage'],
     category: 'Finance',
+    extraResources: [
+      { from: '../builds/a-share-backend-linux', to: 'backend/a-share-backend' },
+      // Python service is macOS-only; not included in Linux builds
+    ],
   },
-  extraResources: [
-    {
-      from: '../builds/a-share-backend',
-      to: 'backend/a-share-backend',
-    },
-    {
-      from: '../builds/a-share-python-service',
-      to: 'python_service/app',
-    },
-  ],
   npmRebuild: false,
 }
 
