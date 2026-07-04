@@ -21,9 +21,9 @@ updated: 2026-07-04 (night)
 
 ### Content
 - [x] 首篇文章 "我用 AI Agent 搭建了 A 股实时看盘系统" (~2500 字)
+- [x] 第2篇文章 "A股助手 v1.0 发布：Go + Electron 全栈实战" (~2,250 字)
 - [x] GitHub Release Notes (含功能清单 + 下载链接)
 - [x] 知识星球欢迎语模板
-- [ ] 第2篇文章 "A股助手 v1.0 发布" (Content Agent 写作中)
 
 ### Infrastructure
 - [x] CI workflow (Go test + TypeScript check)
