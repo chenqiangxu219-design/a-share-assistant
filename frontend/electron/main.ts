@@ -159,9 +159,6 @@ function startPythonService() {
   const isDev = process.env.VITE_DEV_MODE === 'true'
   const isWin = process.platform === 'win32'
 
-  let target: string
-  let args: string[]
-
   if (isDev) {
     // In dev mode, assume Python service is already running on :8081
     console.log('[Python] Dev mode: expecting service on :8081')
@@ -169,8 +166,16 @@ function startPythonService() {
   }
 
   const binaryName = isWin ? 'app.exe' : 'app'
-  target = path.join(process.resourcesPath, 'python_service', binaryName)
-  args = ['--host', '0.0.0.0', '--port', '8081']
+  const target = path.join(process.resourcesPath, 'python_service', binaryName)
+
+  // Check if the Python service binary exists before trying to start it
+  const fs = require('node:fs')
+  if (!fs.existsSync(target)) {
+    console.log('[Python] Binary not found at', target, '- skipping (known limitation on Windows)')
+    return
+  }
+
+  const args = ['--host', '0.0.0.0', '--port', '8081']
 
   pythonProcess = spawn(target, args, {
     stdio: ['ignore', 'pipe', 'pipe'],
@@ -193,6 +198,11 @@ function startPythonService() {
 }
 
 function waitForPythonHealth(maxAttempts = 20, delay = 1000): Promise<void> {
+  // If Python service wasn't started (e.g., binary not found on Windows), skip health check
+  if (!pythonProcess) {
+    console.log('[Python] No process to health-check, skipping')
+    return Promise.resolve()
+  }
   return new Promise((resolve, reject) => {
     let attempts = 0
 
